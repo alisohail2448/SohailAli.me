@@ -818,15 +818,16 @@ body.light-theme{
   background-color: hsl(var(--second-hue), 8%, 44%);
 }
 .sohail{
-  font-size: 1rem;
+  font-size: 1rem; 
   text-align: center;
+  color: white;
 }
 .port{
   color: var(--body-color);
   text-align: center;
 }
 .port a{
-  border-bottom: 2px solid var(--body-color);
+  border-bottom: 2px solid var(-body-color);
   color: var(--body-color);
   text-align: center;
   text-decoration: none;
@@ -876,6 +877,8 @@ body.light-theme{
   .sohail{
     font-size: 1rem;
     text-align: center;
+  color: white;
+
   }
   .port{
     color: var(--body-color);
@@ -940,6 +943,8 @@ body.light-theme{
   .sohail{
     font-size: 1rem;
     text-align: center;
+  color: white;
+
   }
   .port{
     color: var(--body-color);
@@ -966,6 +971,8 @@ body.light-theme{
   .sohail{
     font-size: 1rem;
     text-align: center;
+  color: white;
+
   }
   .port{
     color: var(--body-color);
@@ -1077,6 +1084,8 @@ body.light-theme{
   .sohail{
     font-size: 1rem;
     text-align: center;
+  color: white;
+
   }
   .port{
     color: var(--body-color);
