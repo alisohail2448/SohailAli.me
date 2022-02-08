@@ -542,7 +542,7 @@
           <div class="contact_content">
             <h3 class="contact_title">Write me your project</h3>
 
-            <form action="" method="POST" class="contact_form">
+            <form  onsubmit="sendEmail(); reset(); return false;" action="" method="POST" class="contact_form">
 
               <div class="contact_form-div">
                 <label for="" class="contact_form-tag">Names</label>
@@ -551,7 +551,7 @@
 
               <div class="contact_form-div">
                 <label for="" class="contact_form-tag">Mail</label>
-                <input type="text" class="contact_form-input" placeholder="Insert your Email">
+                <input id="email"  type="email" class="contact_form-input" placeholder="Insert your Email">
               </div>
 
               <div class="contact_form-div contact_form-area">
@@ -606,6 +606,23 @@
 
       </div>
     </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+          Host : "smtp.gmail.com",
+          Username : "alisohail2448@gmail.com",
+          Password : "iam@ly2448",
+          To : 'sohailakhtar7249@gmail.com',
+          From : document.getElementById('email').value,
+          Subject : "New Contact form from portfolio",
+          Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+      }).then(
+        message => alert(message)
+      );
+      }
+    </script>
 
     <script src="assets/js/scrollreveal.min.js"></script>
 
