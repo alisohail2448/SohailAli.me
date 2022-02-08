@@ -703,7 +703,7 @@
 
               <div class="contact_form-div">
                 <label for="" class="contact_form-tag">Names</label>
-                <input type="text" class="contact_form-input" placeholder="Insert your Name">
+                <input type="text" id="name" class="contact_form-input" placeholder="Insert your Name">
               </div>
 
               <div class="contact_form-div">
@@ -713,7 +713,7 @@
 
               <div class="contact_form-div contact_form-area">
                 <label for="" class="contact_form-tag">Project</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact_form-input"></textarea>
+                <textarea  name="" id="message" cols="30" rows="10" placeholder="Write your project" class="contact_form-input"></textarea>
               </div>
 
               <button class="button">Send Message</button>
@@ -774,9 +774,11 @@
           To : 'sohailakhtar7249@gmail.com',
           From : document.getElementById('email').value,
           Subject : "New Contact form from portfolio",
-          Body : "This is Body"
+          Body : "Name: " + document.getElementById('name').value
+                  + "<br> Email: " + document.getElementById('email').value
+                  + "<br> Message: " + document.getElementById('message').value
       }).then(
-        message => alert("Now, we are connected")
+        message => alert("Message Sent Successfully")
       );
       }
     </script>
