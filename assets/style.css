@@ -831,6 +831,7 @@ body.light-theme{
   color: var(--body-color);
   text-align: center;
   text-decoration: none;
+  font-weight: bolder;
   
 }
 
@@ -889,6 +890,7 @@ body.light-theme{
     color: var(--body-color);
     text-align: center;
     text-decoration: none;
+  font-weight: bolder;
     
   }
 }
@@ -955,6 +957,7 @@ body.light-theme{
     color: var(--body-color);
     text-align: center;
     text-decoration: none;
+  font-weight: bolder;
     
   }
 }
@@ -983,6 +986,7 @@ body.light-theme{
     color: var(--body-color);
     text-align: center;
     text-decoration: none;
+  font-weight: bolder;
     
   }
 }
@@ -1096,6 +1100,7 @@ body.light-theme{
     color: var(--body-color);
     text-align: center;
     text-decoration: none;
+  font-weight: bolder;
     
   }
 }
