@@ -118,3 +118,17 @@ const sr = ScrollReveal({
 sr.reveal(`.home_data`)
 sr.reveal(`.home_handle`, {delay: 700})
 sr.reveal(`.home_social, .home_scroll`, {delay: 900, origin: 'bottom'})
+
+
+
+
+
+if ($('.progress_line').length) {
+    $('.progress_line').appear(function () {
+        var el = $(this);
+        var percent = el.data('width');
+        $(el).css('width', percent + '%');
+    }, {
+        accY: 0
+    });
+}
