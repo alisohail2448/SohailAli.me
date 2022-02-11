@@ -130,7 +130,7 @@ if ($(".progress_line").length) {
 }
 
 const flightPath = {
-  curviness: 1.25,
+  curviness: 2.25,
   autoRotate: true,
   values: [
     { x: 100, y: 10 },
