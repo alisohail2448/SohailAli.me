@@ -60,6 +60,7 @@ body,
 button,
 input,
 textarea {
+  /* height: 100%; */
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
@@ -175,6 +176,23 @@ img {
   display: flex;
   padding: 0.4rem;
   border-radius: 5rem;
+}
+
+.animation{
+  height: 100%;
+  /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
+  position: relative;
+  /* overflow: hidden; */
+  z-index: 0;
+}
+
+.paper-plane{
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: 1000;
+  /* translate: rotate(90deg); */
 }
 
 .active-link {
@@ -892,6 +910,9 @@ body.light-theme {
 @media screen and (max-width: 320px) {
 
   
+  .paper-plane{
+    height: 30px;
+  }
 
   .nav_menu {
     padding: 1rem 1.5rem;
@@ -962,6 +983,9 @@ body.light-theme {
     column-gap: .25rem;
     font-size: var(--smaller-font-size);
     padding: 15px;
+  }
+  .paper-plane{
+    height: 50px;
   }
 }
 
