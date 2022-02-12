@@ -179,9 +179,9 @@ img {
 }
 
 .animation{
-  height: 100%;
+
   /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
-  position: relative;
+  position: sticky;
   /* overflow: hidden; */
   z-index: 0;
 }

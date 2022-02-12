@@ -146,7 +146,7 @@ const flightPath = {
     { x: -100, y: 750 },
     { x: 350, y: -50 },
     { x: 600, y: 100 },
-    { x: 800, y: 0 },
+    { x: 800, y: 100 },
     { x: -250, y: window.innerHeight },
   ],
 };
@@ -163,7 +163,7 @@ tween.add(
 const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
-  triggerElement: "body",
+  triggerElement: ".section",
   duration: 1000,
   triggerHook: 0,
 })
