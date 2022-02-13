@@ -129,45 +129,45 @@ if ($(".progress_line").length) {
   );
 }
 
-const flightPath = {
-  curviness: 2.25,
-  autoRotate: true,
-  values: [
-    { x: 100, y: 10 },
-    { x: 800, y: 400 },
-    { x: 1000, y: 400 },
-    { x: 800, y: 400 },
-    { x: 1000, y: 500 },
-    { x: 10, y: 100 },
-    { x: 800, y: 400 },
-    { x: 1000, y: 400 },
-    { x: 800, y: 400 },
-    { x: 1000, y: 500 },
-    { x: -100, y: 750 },
-    { x: 350, y: -50 },
-    { x: 600, y: 100 },
-    { x: 800, y: 100 },
-    { x: -250, y: window.innerHeight },
-  ],
-};
+// const flightPath = {
+//   curviness: 2.25,
+//   autoRotate: true,
+//   values: [
+//     { x: 100, y: 10 },
+//     { x: 800, y: 400 },
+//     { x: 1000, y: 400 },
+//     { x: 800, y: 400 },
+//     { x: 1000, y: 500 },
+//     { x: 10, y: 100 },
+//     { x: 800, y: 400 },
+//     { x: 1000, y: 400 },
+//     { x: 800, y: 400 },
+//     { x: 1000, y: 500 },
+//     { x: -100, y: 750 },
+//     { x: 350, y: -50 },
+//     { x: 600, y: 100 },
+//     { x: 800, y: 100 },
+//     { x: -250, y: window.innerHeight },
+//   ],
+// };
 
-const tween = new TimelineLite();
+// const tween = new TimelineLite();
 
-tween.add(
-  TweenLite.to(".paper-plane", 1, {
-    bezier: flightPath,
-    ease: Power1.easeInOut,
-  })
-);
+// tween.add(
+//   TweenLite.to(".paper-plane", 1, {
+//     bezier: flightPath,
+//     ease: Power1.easeInOut,
+//   })
+// );
 
-const controller = new ScrollMagic.Controller();
+// const controller = new ScrollMagic.Controller();
 
-const scene = new ScrollMagic.Scene({
-  triggerElement: ".section",
-  duration: 1000,
-  triggerHook: 0,
-})
-  .setTween(tween)
-//   .addIndicators()
-  //   .setPin('body')
-  .addTo(controller);
+// const scene = new ScrollMagic.Scene({
+//   triggerElement: ".section",
+//   duration: 1000,
+//   triggerHook: 0,
+// })
+//   .setTween(tween)
+// //   .addIndicators()
+//   //   .setPin('body')
+//   .addTo(controller);
