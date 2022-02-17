@@ -266,6 +266,11 @@ img {
 
 .home_img {
   width: 250px;
+  transition: transform 1s;
+}
+.home_img:hover {
+  transform: scale(1.07);
+  transition: 1s ease-in-out;
 }
 
 .home_handle {
@@ -370,6 +375,11 @@ img {
   width: 220px;
   border-radius: 1.5rem;
   justify-self: center;
+  transition: transform 1s;
+}
+.about_image:hover{
+  transform: scale(1.07);
+  transition: 1s ease-in-out;
 }
 
 .about_data {
@@ -1010,8 +1020,14 @@ body.light-theme {
     height: 253px;
   }
   .home_img {
+  transition: transform 1s;
     width: 130px;
   }
+  .home_img:hover {
+    transform: scale(1.07);
+    transition: 1s ease-in-out;
+  }
+
 
   .about_info {
     grid-template-columns: repeat(2, 1fr);
@@ -1305,6 +1321,10 @@ body.light-theme {
   .home_img {
     width: 300px;
   }
+  .home_img:hover {
+    transform: scale(1.07);
+    transition: 1s ease-in-out;
+  }
   .home_social-link {
     padding: 0.4rem;
     font-size: 1.25rem;
@@ -1326,6 +1346,7 @@ body.light-theme {
     width: 350px;
     /* cursor: pointer; */
   }
+  
 
 
 
